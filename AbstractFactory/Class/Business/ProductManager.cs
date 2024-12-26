@@ -10,15 +10,19 @@ namespace AbstractFactory.Class.Business
     public class ProductManager
     {
         CrossCuttingConsernsFactory _crossCuttingConsernsFactory;
+        Logging _logging;
+        Caching _caching;
         public ProductManager(CrossCuttingConsernsFactory crossCuttingConsernsFactory) //bunun sayesinde cccfactory'si abstract edinen tüm classlar gönderilip çağrılabilir
         {
             _crossCuttingConsernsFactory = crossCuttingConsernsFactory;
+            _logging = _crossCuttingConsernsFactory.CreateLog();
+            _caching=_crossCuttingConsernsFactory.CreateCache();
         }
         public void GetAll()
         {
             //ek kodlar olabilir
-            _crossCuttingConsernsFactory.CreateLog().Log("Giris");
-            _crossCuttingConsernsFactory.CreateCache().Cache("#ahsjd1280djaok...");
+            _logging.Log("Giris");
+            _caching.Cache("#ahsjd1280djaok...");
 
             Console.WriteLine("Here:...");
         }
