@@ -17,6 +17,9 @@ namespace AbstractFactory.Class.Business
         public void GetAll()
         {
             //ek kodlar olabilir
+            _crossCuttingConsernsFactory.CreateLog().Log("Giris");
+            _crossCuttingConsernsFactory.CreateCache().Cache("#ahsjd1280djaok...");
+
             Console.WriteLine("Here:...");
         }
     }
