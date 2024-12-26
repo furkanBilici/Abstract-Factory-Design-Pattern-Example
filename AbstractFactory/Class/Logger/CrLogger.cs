@@ -5,13 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AbstractFactory.Class
+namespace AbstractFactory.Class.Logger
 {
-    internal class FrLogger : Logging
+    internal class CrLogger : Logging
     {
         public override void Log(string message)
         {
-            Console.WriteLine("Logged with FrLogger",message);
+            Console.WriteLine("Logged with CrLogger", message);
         }
     }
 }
