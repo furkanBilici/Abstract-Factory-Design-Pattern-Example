@@ -5,13 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AbstractFactory.Cache
+namespace AbstractFactory.Class.Cache
 {
     internal class NCache : Caching
     {
         public override void Cache(string data)
         {
-            Console.WriteLine("Cached with NCache",data);
+            Console.WriteLine("Cached with NCache", data);
         }
     }
 }

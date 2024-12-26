@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace AbstractFactory.Abstract
 {
-    internal class Logging
+    public abstract class Logging
     {
+        public abstract void Log(string message);
     }
 }

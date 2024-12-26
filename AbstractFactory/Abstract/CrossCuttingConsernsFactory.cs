@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AbstractFactory.Abstract
 {
-    public abstract class Factory1
+    public abstract class CrossCuttingConsernsFactory
     {
         public abstract Logging CreateLog();
         public abstract Caching CreateCache();
